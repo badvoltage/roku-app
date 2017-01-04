@@ -14,7 +14,7 @@ Function RSSParse()
        if MyContent.DoesExist("itunes:summary")
             m.glb.summary = MyContent["itunes:summary"].getText()
        end if
-       m.glb.author = "show@badvoltage.org"
+       m.glb.author = "http://badvoltage.org"
        m.glb.warning = 0
        
        m.ChildContent = GetEpisodes(m.feed)
